@@ -232,9 +232,18 @@ The main functionalities:
 ▪ Connect Authenion with external OpenID Connect providers for authentication
 ▪ You can manage sessions for the protected applications and use OAuth scopes to send user data to application</P>
                             <hr>
-                            <h6 class="title text-danger">2015 - 2016</h6>
-                            <P>High School Degree</P>
-                            <P class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum recusandae, cupiditate ullam dolor ratione repellendus.aliquid repudiandae saepe!.</P>
+                            <h6 class="title text-danger"></h6>
+                            <P></P>
+                            <P class="subtitle">3.4How does Authenion work?
+Authenion acts as the gateway to your Oracle Enterprise Applications and capture user requests & delegate it to your 
+Identity Provider (IdP) for authentication.
+Session Initiation
+▪ Using advanced & secured integration standards, Authenion securely connects with your Identity Provider using 
+OAuth/OIDC protocols. This allows Authenion protected Oracle Applications requests to be delegated to your 
+centralized Identity Provider in your organization.
+▪ The Identity Provider will be responsible for challenging the user requests with strong authentication schemes. 
+The Identity Provider will also be responsible for collecting the user attributes and send it to Authenion through 
+OAuth/OIDC tokens for further processing such as session establishment & granting user-access.</P>
                             
                         </div>
                     </div>
@@ -243,32 +252,34 @@ The main functionalities:
                     <div class="card">
                        <div class="card-header">
                             <div class="pull-left">
-                                <h4 class="mt-2">Skills</h4>
+                                <h4 class="mt-2">Processing steps</h4>
                                 <span class="line"></span>  
                             </div>
                         </div>
                         <div class="card-body pb-2">
-                           <h6>hTL5 &amp; CSS3</h6>
+                           <h6>1. User request access for Oracle Applications</h6>
                             <div class="progress mb-3">
                                 <div class="progress-bar bg-danger" role="progressbar" style="width: 97%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
-                            <h6>JavaScript</h6>
+                            <h6>2. Authenion checks for the user session, and it redirects the user’s request to IdP for authentication</h6>
                             <div class="progress mb-3">
                                 <div class="progress-bar bg-danger" role="progressbar" style="width: 85%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
-                            <h6>PHP</h6>
+                            <h6>3. IdP authenticates the user using the adapters and against a data store configured to it</h6>
                             <div class="progress mb-3">
                                 <div class="progress-bar bg-danger" role="progressbar" style="width: 80%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
-                            <h6>SQL</h6>
+                            <h6>4. IdP retrieves the necessary attributes from its configured data store and sends it to Authenion for further processing</h6>
                             <div class="progress mb-3">
                                 <div class="progress-bar bg-danger" role="progressbar" style="width: 90%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
-                            <h6>Laborum</h6>
+                            <h6>5. Authenion will receive the authenticated user’s attributes and parse the attributes into HTTP-Headers and send it to 
+the target application</h6>
                             <div class="progress mb-3">
                                 <div class="progress-bar bg-danger" role="progressbar" style="width: 90%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
-                            <h6>Tempora</h6>
+                            <h6>6. Oracle Applications will retrieve & validate the HTTP-Headers from Authenion and grant access to users based on their 
+roles and responsibilities</h6>
                             <div class="progress mb-3">
                                 <div class="progress-bar bg-danger" role="progressbar" style="width: 90%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
