@@ -311,11 +311,32 @@ This section provides instructions for installing, configuring & starting/stoppi
                             <div class="progress mb-3">
                                 <div class="progress-bar bg-danger" role="progressbar" style="width: 80%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
-                            <h6>French</h6>
+                            <h6>3 Setup Authenion 
+1.	Navigate to the following directory in the Authenion server. 
+	 	<authenion_install_dir>/bin 
+2.	Execute the following command to grant permission. 
+ 	chmod +x * 
+3.	Run the setup command 
+	 	 	./setup.sh 
+ 
+4.	Read and accept the Software Terms & Conditions. This will complete the setup process. 
+Note: In case if the process fails to complete the setup, you can re-run the setup script to complete it. 
+</h6>
                             <div class="progress mb-3">
                                 <div class="progress-bar bg-danger" role="progressbar" style="width: 45%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
-                            <h6>Spanish</h6>
+                            <h6>Start & Stop Authenion 
+1.	To Start the Authenion instance, navigate to the “<authenion_install_dir>/bin” directory and run the ‘startinstance.sh’ command. 
+ 
+2.	To Stop the Authenion instance, run the ‘stop-instance.sh’ command. 
+ 
+
+3.	Check the status of the Authenion application by executing the ‘status.sh’ command. 
+ 
+4.5 Authenion health-check 
+To check the Authenion status through heartbeat URL, enter the following URL in the browser. This can be used for monitoring the Authenion instance status. 
+ 
+</h6>
                             <div class="progress mb-3">
                                 <div class="progress-bar bg-danger" role="progressbar" style="width: 67%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
@@ -335,8 +356,10 @@ This section provides instructions for installing, configuring & starting/stoppi
                             <div class="m-auto"><i class="ti-alarm-clock icon-xl"></i></div>
                         </div>
                         <div class="col-7 text-left py-3">
-                            <h1 class="text-danger font-weight-bold font40">500</h1>
-                            <p class="text-light mb-1">Hours Worked</p>
+                            <h1 class="text-danger font-weight-bold font40">6 Install Identity Provider’s Certificate into Authenion Trust Store </h1>
+                            <p class="text-light mb-1">1.	Export the SSL Certificate from the Identity Provider (PingFederate, PingOne, AzureAD, etc.,) and place the certificate anywhere inside “<authenion_install_dir>” in the Authenion server. 
+2.	Run the following command in the Authenion server to install the Identity Provider’s certificate. 
+</p>
                         </div>
                     </div>
                 </div>
